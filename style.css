@@ -23,6 +23,10 @@ body {
     transition: transform 0.5s;
 }
 
+.hrmin{
+    font-size: 45rem;
+}
+
 div.time {
     display: flex;
     align-items: center;
@@ -151,9 +155,10 @@ button img {
     div.date {
         font-size: 4rem;
     }
-
+    
     button {
         width: 80px;
+        display: block;
     }
 }
 
@@ -179,7 +184,6 @@ button img {
 
     button {
         width: 70px;
-        display: block;
     }
 }
 
