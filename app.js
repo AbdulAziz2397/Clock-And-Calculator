@@ -14,7 +14,7 @@ setInterval( function(){
     var date = document.getElementById("date");
     var ampm = document.getElementById("ampm");
 
-    var hours = clock.getHours();
+    var hours = clock.getHours()+1;
     var minutes = clock.getMinutes();
     var seconds = clock.getSeconds();
     var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
