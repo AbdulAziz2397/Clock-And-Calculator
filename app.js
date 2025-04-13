@@ -22,17 +22,25 @@ setInterval( function(){
     var years = clock.getFullYear();
     var dates = clock.getDate();
     
-    if(hours > 11){
+    if(hours >= 12){
         ampm.innerText = 'PM';
-        hours = hours - 12;
+        if(hours > 12){
+            hours = hours - 12;
+        }
     }
-
-    hr.innerText = hours;
-    min.innerText = minutes;
-    sec.innerText = seconds;
+    else{
+        ampm.innerText = 'AM';
+    }
+    
+    hr.innerText = String(hours);
+    min.innerText = String(minutes).padStart(2, '0');
+    sec.innerText = String(seconds).padStart(2, '0');
     month.innerText = months[clock.getMonth()];
     day.innerText = days[clock.getDay()];
     year.innerText = years;
     date.innerText = dates;
-
-}, 10);
+    
+    if(seconds.length < 2){
+        sec.innerText = String("0") + seconds;
+    }
+}, 1000);
