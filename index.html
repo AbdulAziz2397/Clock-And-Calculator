@@ -7,25 +7,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="style.css">
     <title>Digital Clock</title>
 </head>
 
 <body>
 
-
-<div class="clock">
+    <button onclick="rotateScreen()"><img src="./images/download-removebg-preview.png" alt=""></button>
+    
+    <div class="clock" id="myclock">
     <div class="time">
-        <div>
+        <div class="hrmin">
             <span id="hr">00</span><span>:</span><span id="min">00</span>
         </div>
         <div class="secAndAmPm">
             <span id="ampm">AM</span>
-            <span id="sec">00</span>
+            <span id="sec">00</span>    
         </div>
     </div>
     <div class="date">
-        <span id="day">Sunday</span>
+        <span id="day">Sunday,</span>
         <span id="date">00</span>
         <span id="month">Jun</span>
         <span id="year">2000</span>

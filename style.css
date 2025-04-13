@@ -1,33 +1,34 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
     font-family: sans-serif;
+    color: #97C18D;
 }
 
-body{
+body {
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
+    position: relative;
 }
 
-div.clock{
+#myclock.clock {
     display: flex;
     flex-direction: column;
-    font-size: 20rem;
-    font-weight: 100;
-    color: #97C18D;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
 }
 
-div.time{
+div.time {
     display: flex;
     align-items: center;
 }
 
-.secAndAmPm{
+.secAndAmPm {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,9 +49,37 @@ div.date {
     justify-content: space-between;
 }
 
+button {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    height: auto;
+    border-radius: 20px;
+    width: 80px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+    display: none;
+}
+
+button:hover {
+    background-color: #97c18d6b;
+}
+
+button img {
+    width: 100%;
+    object-fit: cover;
+}
+
 /* For very large screens */
 @media (max-width: 2560px) {
-    div.clock {
+    .hrmin {
         font-size: 40rem;
     }
 
@@ -62,11 +91,15 @@ div.date {
     div.date {
         font-size: 10rem;
     }
+
+    button {
+        width: 140px;
+    }
 }
 
 /* For desktop screens */
 @media (max-width: 1900px) {
-    div.clock {
+    .hrmin {
         font-size: 32rem;
     }
 
@@ -78,11 +111,15 @@ div.date {
     div.date {
         font-size: 7rem;
     }
+
+    button {
+        width: 120px;
+    }
 }
 
 /* For laptops */
 @media (max-width: 1440px) {
-    div.clock {
+    .hrmin {
         font-size: 24rem;
     }
 
@@ -94,11 +131,15 @@ div.date {
     div.date {
         font-size: 6rem;
     }
+
+    button {
+        width: 100px;
+    }
 }
 
 /* For tablets */
 @media (max-width: 1024px) {
-    div.clock {
+    .hrmin {
         font-size: 16rem;
     }
 
@@ -110,15 +151,19 @@ div.date {
     div.date {
         font-size: 4rem;
     }
+
+    button {
+        width: 80px;
+    }
 }
 
 /* For large phones */
 @media (max-width: 768px) {
-    div.clock {
+    .hrmin {
         font-size: 12rem;
     }
 
-    .secAndAmPm{
+    .secAndAmPm {
         row-gap: 35px;
         margin-top: -10px;
     }
@@ -131,15 +176,20 @@ div.date {
     div.date {
         font-size: 3rem;
     }
+
+    button {
+        width: 70px;
+        display: block;
+    }
 }
 
 /* For small phones */
 @media (max-width: 500px) {
-    div.clock {
+    .hrmin {
         font-size: 6rem;
     }
 
-    .secAndAmPm{
+    .secAndAmPm {
         margin-left: 30px;
         row-gap: 10px;
         margin-top: -0px;
@@ -152,5 +202,9 @@ div.date {
 
     div.date {
         font-size: 1.5rem;
+    }
+
+    button {
+        width: 60px;
     }
 }

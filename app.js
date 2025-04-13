@@ -44,3 +44,13 @@ setInterval( function(){
         sec.innerText = String("0") + seconds;
     }
 }, 1000);
+
+function rotateScreen (){
+    var myClock = document.getElementById('myclock');
+    if(myClock.style.transform === 'rotate(90deg)'){
+        myClock.style.transform = 'rotate(0deg)'
+    }
+    else{
+        myClock.style.transform = 'rotate(90deg)';
+    }
+}
