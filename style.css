@@ -2,6 +2,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body{
@@ -13,11 +14,143 @@ body{
     background-color: black;
 }
 
-div{
+div.clock{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     font-size: 20rem;
     font-weight: 100;
-    font-family: "Bebas Neue", sans-serif;
     color: #97C18D;
+}
+
+div.time{
+    display: flex;
+    align-items: center;
+}
+
+.secAndAmPm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+    row-gap: 50px;
+    margin-top: -20px;
+}
+
+#sec,
+#ampm {
+    font-size: 5rem;
+}
+
+div.date {
+    font-size: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* For very large screens */
+@media (max-width: 2560px) {
+    div.clock {
+        font-size: 40rem;
+    }
+
+    #sec,
+    #ampm {
+        font-size: 8rem;
+    }
+
+    div.date {
+        font-size: 10rem;
+    }
+}
+
+/* For desktop screens */
+@media (max-width: 1900px) {
+    div.clock {
+        font-size: 32rem;
+    }
+
+    #sec,
+    #ampm {
+        font-size: 7rem;
+    }
+
+    div.date {
+        font-size: 7rem;
+    }
+}
+
+/* For laptops */
+@media (max-width: 1440px) {
+    div.clock {
+        font-size: 24rem;
+    }
+
+    #sec,
+    #ampm {
+        font-size: 6rem;
+    }
+
+    div.date {
+        font-size: 6rem;
+    }
+}
+
+/* For tablets */
+@media (max-width: 1024px) {
+    div.clock {
+        font-size: 16rem;
+    }
+
+    #sec,
+    #ampm {
+        font-size: 4rem;
+    }
+
+    div.date {
+        font-size: 4rem;
+    }
+}
+
+/* For large phones */
+@media (max-width: 768px) {
+    div.clock {
+        font-size: 12rem;
+    }
+
+    .secAndAmPm{
+        row-gap: 35px;
+        margin-top: -10px;
+    }
+
+    #sec,
+    #ampm {
+        font-size: 2.5rem;
+    }
+
+    div.date {
+        font-size: 3rem;
+    }
+}
+
+/* For small phones */
+@media (max-width: 500px) {
+    div.clock {
+        font-size: 6rem;
+    }
+
+    .secAndAmPm{
+        margin-left: 30px;
+        row-gap: 10px;
+        margin-top: -0px;
+    }
+
+    #sec,
+    #ampm {
+        font-size: 1.5rem;
+    }
+
+    div.date {
+        font-size: 1.5rem;
+    }
 }
