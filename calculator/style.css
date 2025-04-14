@@ -77,6 +77,27 @@ input:-ms-input-placeholder {
     width: 100%;
 }
 
+a {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 20px;
+    transition: all 0.5s;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    border: 2px solid black;
+}
+
 @media (max-width: 320px) {
     .calculator {
         width: 100%;
