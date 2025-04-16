@@ -14,7 +14,7 @@ setInterval(function () {
     var date = document.getElementById("date");
     var ampm = document.getElementById("ampm");
 
-    var hours = clock.getHours() + 1;
+    var hours = clock.getHours();
     var minutes = clock.getMinutes();
     var seconds = clock.getSeconds();
     var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -22,8 +22,8 @@ setInterval(function () {
     var years = clock.getFullYear();
     var dates = clock.getDate();
 
-    if (hours >= 12) {
-        ampm.innerText = 'PM';
+    if (hours >= 10 , hours <= 23) {
+            ampm.innerText = 'PM';
     }
     else {
         ampm.innerText = 'AM';

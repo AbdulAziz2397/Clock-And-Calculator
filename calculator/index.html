@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
@@ -15,30 +16,30 @@
     <div class="calculator">
         <input type="text" disabled id="userInput" value="" placeholder="0">
         <div class="btns">
-            <button onclick="getValue('AC')">AC</button>
-            <button onclick="getValue('D')">D</button>
-            <button onclick="getValue('%')">%</button>
-            <button onclick="getValue('/')">/</button>
+            <button class="grey" onclick="getValue('AC')">AC</button>
+            <button class="grey" onclick="getValue('D')">D</button>
+            <button class="light" onclick="getValue('%')">%</button>
+            <button class="light" onclick="getValue('/')">/</button>
 
-            <button onclick="getValue('7')">7</button>
-            <button onclick="getValue('8')">8</button>
-            <button onclick="getValue('9')">9</button>
-            <button onclick="getValue('*')">x</button>
+            <button class="dark" onclick="getValue('7')">7</button>
+            <button class="dark" onclick="getValue('8')">8</button>
+            <button class="dark" onclick="getValue('9')">9</button>
+            <button class="light" onclick="getValue('*')"><i class="fa-solid fa-xmark"></i></button>
 
-            <button onclick="getValue('4')">4</button>
-            <button onclick="getValue('5')">5</button>
-            <button onclick="getValue('6')">6</button>
-            <button onclick="getValue('-')">-</button>
+            <button class="dark" onclick="getValue('4')">4</button>
+            <button class="dark" onclick="getValue('5')">5</button>
+            <button class="dark" onclick="getValue('6')">6</button>
+            <button class="light" onclick="getValue('-')">-</button>
 
-            <button onclick="getValue('1')">1</button>
-            <button onclick="getValue('2')">2</button>
-            <button onclick="getValue('3')">3</button>
-            <button onclick="getValue('+')">+</button>
+            <button class="dark" onclick="getValue('1')">1</button>
+            <button class="dark" onclick="getValue('2')">2</button>
+            <button class="dark" onclick="getValue('3')">3</button>
+            <button class="light" onclick="getValue('+')">+</button>
 
-            <button id="zeroBtn" onclick="getValue('0')">0</button>
-            <!-- <button id="zeroBtn" onclick="getValue('00')">00</button> -->
-            <button onclick="getValue('.')">.</button>
-            <button onclick="getValue('=')">=</button>
+            <button class="dark" id="zeroBtn" onclick="getValue('0')">0</button>
+            <button class="dark" id="zeroBtn" onclick="getValue('00')">00</button>
+            <button class="dark" onclick="getValue('.')">.</button>
+            <button class="light" onclick="getValue('=')">=</button>
         </div>
     </div>
 
