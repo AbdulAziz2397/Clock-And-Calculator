@@ -1,7 +1,3 @@
-
-
-
-
 setInterval(function () {
     var clock = new Date();
 
@@ -22,18 +18,23 @@ setInterval(function () {
     var years = clock.getFullYear();
     var dates = clock.getDate();
 
-    if (hours >= 10 , hours <= 23) {
-            ampm.innerText = 'PM';
+    
+    if(hours === 0){
+        hours = 12;
     }
-    else {
+    else if(hours > 12){
+        hours = hours-12;
+    }
+    
+    console.log(hours);
+
+    if(clock.getHours >= 12){
+        ampm.innerText = 'PM';
+    }
+    else{
         ampm.innerText = 'AM';
     }
-    if (hours > 12) {
-        hours = hours - 12;
-    }
-    else {
-        hours = hours - 1;
-    }
+
 
     hr.innerText = String(hours);
     min.innerText = String(minutes).padStart(2, '0');
@@ -42,10 +43,6 @@ setInterval(function () {
     day.innerText = days[clock.getDay()];
     year.innerText = years;
     date.innerText = dates;
-
-    if (seconds.length < 2) {
-        sec.innerText = String("0") + seconds;
-    }
 }, 1000);
 
 function rotateScreen() {
