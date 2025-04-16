@@ -6,7 +6,7 @@
     color: #97C18D;
 }
 
-#particles-js{
+#particles-js {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -23,7 +23,7 @@
     transition: transform 0.5s;
 }
 
-.hrmin{
+.hrmin {
     font-size: 45rem;
 }
 
@@ -82,24 +82,18 @@ button img {
 }
 
 a {
-    padding: 10px;
-    border: 2px solid #97C18D;
-    border-radius: 20px;
     color: #97C18D;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     margin: 20px;
-    transition: all 0.5s;
+    transition: all 0.2s;
     position: fixed;
     top: 20px;
     left: 20px;
 }
 
-a:hover{
-    background-color: #97C18D;
-    color: #000;
-    transform: scale(1.1);
-    border: 2px solid #000;
+a:hover {
+    transform: scale(1.3);
 }
 
 /* For very large screens */
@@ -119,6 +113,10 @@ a:hover{
 
     button {
         width: 140px;
+    }
+
+    a {
+        font-size: 80px;
     }
 }
 
@@ -140,10 +138,15 @@ a:hover{
     button {
         width: 120px;
     }
+
+    
+    a {
+        font-size: 70px;
+    }
 }
 
 /* For laptops */
-@media (max-width: 1440px) {
+@media (max-width: 1460px) {
     .hrmin {
         font-size: 24rem;
     }
@@ -160,10 +163,14 @@ a:hover{
     button {
         width: 100px;
     }
+    
+    a {
+        font-size: 60px;
+    }
 }
 
 /* For tablets */
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
     .hrmin {
         font-size: 16rem;
     }
@@ -176,10 +183,14 @@ a:hover{
     div.date {
         font-size: 4rem;
     }
-    
+
     button {
         width: 80px;
         display: block;
+    }
+    
+    a {
+        font-size: 55px;
     }
 }
 
@@ -206,10 +217,44 @@ a:hover{
     button {
         width: 70px;
     }
+
+    a {
+        font-size: 45px;
+    }
 }
 
 /* For small phones */
-@media (max-width: 500px) {
+@media (max-width: 580px) {
+    .hrmin {
+        font-size: 8rem;
+    }
+
+    .secAndAmPm {
+        margin-left: 30px;
+        row-gap: 10px;
+        margin-top: -0px;
+    }
+
+    #sec,
+    #ampm {
+        font-size: 2rem;
+    }
+
+    div.date {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 60px;
+    }
+
+    a {
+        font-size: 35px;
+    }
+}
+
+/* For small phones */
+@media (max-width: 450px) {
     .hrmin {
         font-size: 6rem;
     }
@@ -231,5 +276,9 @@ a:hover{
 
     button {
         width: 60px;
+    }
+
+    a {
+        font-size: 30px;
     }
 }

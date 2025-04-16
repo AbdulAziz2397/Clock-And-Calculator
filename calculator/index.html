@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
@@ -13,33 +14,33 @@
 
     
     <div class="calculator">
-        <a href="../index.html">Back</a>
+        <a href="../index.html"><i class="fa-solid fa-arrow-left-long"></i></a>
         <input type="text" disabled id="userInput" value="" placeholder="0">
         <div class="btns">
-            <button class="grey" onclick="getValue('AC')">AC</button>
-            <button class="grey" onclick="getValue('D')">D</button>
-            <button class="light" onclick="getValue('%')">%</button>
-            <button class="light" onclick="getValue('/')">/</button>
+            <button class="numBtn grey" onclick="getValue('AC')">AC</button>
+            <button class="numBtn grey" onclick="getValue('D')"><i class="fa-solid fa-delete-left"></i></button>
+            <button class="numBtn light" onclick="getValue('%')">%</button>
+            <button class="numBtn light" onclick="getValue('/')"><i class="fa-solid fa-divide"></i></button>
 
-            <button class="dark" onclick="getValue('7')">7</button>
-            <button class="dark" onclick="getValue('8')">8</button>
-            <button class="dark" onclick="getValue('9')">9</button>
-            <button class="light" onclick="getValue('*')">x</button>
+            <button class="numBtn dark" onclick="getValue('7')">7</button>
+            <button class="numBtn dark" onclick="getValue('8')">8</button>
+            <button class="numBtn dark" onclick="getValue('9')">9</button>
+            <button class="numBtn light" onclick="getValue('*')"><i class="fa-solid fa-xmark"></i></button>
 
-            <button class="dark" onclick="getValue('4')">4</button>
-            <button class="dark" onclick="getValue('5')">5</button>
-            <button class="dark" onclick="getValue('6')">6</button>
-            <button class="light" onclick="getValue('-')">-</button>
+            <button class="numBtn dark" onclick="getValue('4')">4</button>
+            <button class="numBtn dark" onclick="getValue('5')">5</button>
+            <button class="numBtn dark" onclick="getValue('6')">6</button>
+            <button class="numBtn light" onclick="getValue('-')"><i class="fa-solid fa-minus"></i></button>
 
-            <button class="dark" onclick="getValue('1')">1</button>
-            <button class="dark" onclick="getValue('2')">2</button>
-            <button class="dark" onclick="getValue('3')">3</button>
-            <button class="light" onclick="getValue('+')">+</button>
+            <button class="numBtn dark" onclick="getValue('1')">1</button>
+            <button class="numBtn dark" onclick="getValue('2')">2</button>
+            <button class="numBtn dark" onclick="getValue('3')">3</button>
+            <button class="numBtn light" onclick="getValue('+')"><i class="fa-solid fa-plus"></i></button>
 
-            <button class="dark" id="zeroBtn" onclick="getValue('0')">0</button>
-            <button class="dark" id="zeroBtn" onclick="getValue('00')">00</button>
-            <button class="dark" onclick="getValue('.')">.</button>
-            <button class="light" onclick="getValue('=')">=</button>
+            <button class="numBtn dark" id="zeroBtn" onclick="getValue('0')">0</button>
+            <button class="numBtn dark" id="zeroBtn" onclick="getValue('00')">00</button>
+            <button class="numBtn dark" onclick="getValue('.')">.</button>
+            <button class="numBtn light" onclick="getValue('=')">=</button>
         </div>
     </div>
 
