@@ -23,12 +23,10 @@ setInterval(function () {
         hours = 12;
     }
     else if(hours > 12){
-        hours = hours-12;
+        hours = hours - 12;
     }
-    
-    console.log(hours);
 
-    if(clock.getHours >= 12){
+    if(clock.getHours() >= 12){
         ampm.innerText = 'PM';
     }
     else{
